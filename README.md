@@ -17,7 +17,7 @@
 
 <h2>🗂 담당 파트</h2>
 <ul>
-<li>Layout 및 UI 관련 Java 구현</li>
+<li>Layout 및 관련 Java 구현</li>
 <li>게시글 업로드 사진 크롭 · 임시 파일 처리 구현</li>
 <li>게시글 업로드 DB 구현 with 진민규 팀원</li>
 <li>카카오 로그인 · 맵 구현 with 유성민 · 전정민 팀원</li>
