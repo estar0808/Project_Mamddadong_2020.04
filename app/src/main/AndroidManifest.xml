@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gnu.cs.mamddadong">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="gnu.cs.mamddadong.KakaoGlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name="gnu.cs.mamddadong.ChattingActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="gnu.cs.mamddadong.MyPostListActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="gnu.cs.mamddadong.LocationSelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.ShortEdges" />
+        <activity
+            android:name="gnu.cs.mamddadong.LoadingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="gnu.cs.mamddadong.MapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="gnu.cs.mamddadong.CategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="gnu.cs.mamddadong.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="gnu.cs.mamddadong.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="gnu.cs.mamddadong.WriteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="gnu.cs.mamddadong.CategoryHelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="gnu.cs.mamddadong.CategorySplitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="gnu.cs.mamddadong.CategoryServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="gnu.cs.mamddadong.LookupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="gnu.cs.mamddadong.KakaoLoginActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data android:name="com.kakao.sdk.AppKey" android:value="@string/kakao_app_key" />
+    </application>
+</manifest>
